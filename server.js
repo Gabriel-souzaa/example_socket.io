@@ -10,11 +10,19 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
 
+app.get('/event', (req, res) => {
+    res.sendFile(__dirname + '/event.html');
+});
+
 io.on('connection', (socket) => {
     console.log('a user connected');
 
     socket.on('chat message', (msg) => {
         io.emit('chat message', msg);
+    });
+
+    socket.on('event', (event) => {
+        io.emit('event', event);
     });
 });
 
