@@ -1,0 +1,25 @@
+{
+  "name": "example_socket.io",
+  "version": "1.0.0",
+  "description": "Estudos socket.io",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gabriel-souzaa/example_socket.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gabriel-souzaa/example_socket.io/issues"
+  },
+  "homepage": "https://github.com/Gabriel-souzaa/example_socket.io#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "socket.io": "^4.5.4"
+  }
+}
