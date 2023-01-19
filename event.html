@@ -92,7 +92,12 @@
 
         socket.on('event', function (event) {
             var item = document.createElement('li');
-            item.textContent = `Tipo: ${event.type} Decrição: ${event.description}`;
+            item.innerHTML = `
+              <div style="border: 1px solid black; padding: 10px;margin-bottom: 10px;">
+                <strong>Tipo:</strong> ${event.type}
+                <strong>Decrição:</strong> ${event.description}
+              </div>
+            `;
             events.appendChild(item);
         });
     </script>
